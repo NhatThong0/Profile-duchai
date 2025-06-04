@@ -1,12 +1,48 @@
-<!-- index.html -->
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <title>iamduchai</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Cá Nhân</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Chào mừng bạn đến với iamduchai.id.vn!</h1>
-  <p>Trang web đang được xây dựng.</p>
+    <div class="container">
+        <div class="floating-shapes">
+            <div class="shape" style="width: 60px; height: 60px; background: linear-gradient(45deg, #ff6b6b, #4ecdc4); border-radius: 50%;"></div>
+            <div class="shape" style="width: 40px; height: 40px; background: linear-gradient(45deg, #45b7d1, #96ceb4); border-radius: 20%;"></div>
+            <div class="shape" style="width: 50px; height: 50px; background: linear-gradient(45deg, #667eea, #764ba2); transform: rotate(45deg);"></div>
+        </div>
+
+        <div class="avatar" onclick="changeAvatar()">
+            <span id="avatarText">NT</span>
+        </div>
+
+        <h1 id="studentName">Nguyễn Văn Tùng</h1>
+
+        <div class="info-card" onclick="animateCard(this)">
+            <div class="info-label">Lớp & Chuyên ngành</div>
+            <div class="info-value" id="className">Lớp 12A1 - Chuyên Tin học</div>
+        </div>
+
+        <div class="info-card" onclick="animateCard(this)">
+            <div class="info-label">Mã sinh viên</div>
+            <div class="info-value" id="studentId">2023001234</div>
+        </div>
+
+        <div class="info-card" onclick="animateCard(this)">
+            <div class="info-label">Khoa</div>
+            <div class="info-value" id="faculty">Công nghệ Thông tin</div>
+        </div>
+
+        <div class="social-links">
+            <a href="#" class="social-btn" title="Facebook">📘</a>
+            <a href="#" class="social-btn" title="Instagram">📷</a>
+            <a href="#" class="social-btn" title="LinkedIn">💼</a>
+            <a href="#" class="social-btn" title="Email">📧</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
